@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💍 Our Love Contract 💍</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: #fff0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .contract {
+    background: #fff;
+    border: 5px double #ff69b4;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+  }
+
+  .contract img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #ff69b4;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    color: #ff1493;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  p {
+    font-size: 18px;
+    color: #c71585;
+    line-height: 1.6;
+  }
+
+  .names {
+    font-weight: bold;
+    font-size: 22px;
+    color: #ff1493;
+  }
+
+  .buttons {
+    margin-top: 30px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border: none;
+    border-radius: 10p
+    transition: all 0.3s;
+  }
+
+  .yes {
+    background-color: #ff69b4;
+    color: white;
+  }
+
+  .no {
+    background-color: #fff0f5;
+    color: #ff1493;
+    position: relative;
+  }
+
+  .heart {
+    font-size: 40px;
+    color: #ff1493;
+    animation: beat 1s infinite;
+    margin-top: 20px;
+  }
+
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+</style>
+</head>
+<body>
+
+<div class="contract">
+  <img src="uss.jpg" alt="Us">
+  <h1> Proposal ni Ck </h1>
+  <p>This certifies that <span class="names">[John Chriskyle Teves]</span> and <span class="names">[Angeleen Graeae Rivera]</span> agree to share endless love, hugs, and laughter forever. ❤️</p>
+  <p>Do you agree to be my wife babi?<br>(pls say yes)</p>
+
+  <div class="buttons">
+    <button class="yes" onclick="agree()">Yes </button>
+    <button class="no">No:((</button>
+  </div>
+
+  <div class="heart">❤️</div>
+</div>
+
+<script>
+  const noBtn = document.querySelector('.no');
+
+  noBtn.addEventListener('mouseover', () => {
+    const x = Math.random() * 200 - 100; // move horizontally
+    const y = Math.random() * 100 - 50;  // move vertically
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+  });
+
+  function agree() {
+    alert("YAYYYY");
+  }
+</script>
+
+</body>
+</html>
